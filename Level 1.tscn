@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://uw0g7bgu1dmq"]
+[gd_scene load_steps=4 format=3 uid="uid://uw0g7bgu1dmq"]
 
 [ext_resource type="PackedScene" uid="uid://bdevao5iaygkt" path="res://rectPlatorm.tscn" id="1_xtwo5"]
+[ext_resource type="PackedScene" uid="uid://cp3v1ynp484sh" path="res://rectBarrier.tscn" id="2_1afy7"]
+[ext_resource type="PackedScene" uid="uid://de308w4pwkf1k" path="res://player.tscn" id="3_u3bmv"]
 
 [node name="Map 1" type="Node2D"]
 
 [node name="rect platorm" parent="." instance=ExtResource("1_xtwo5")]
-position = Vector2(425, 449)
-scale = Vector2(3.35846, 0.587453)
+position = Vector2(374, 489)
+scale = Vector2(3.35846, 0.187454)
+
+[node name="rectBarrier" parent="." instance=ExtResource("2_1afy7")]
+position = Vector2(589, 618)
+scale = Vector2(9.1716, 0.442999)
+
+[node name="player" parent="." instance=ExtResource("3_u3bmv")]
+position = Vector2(598, 283)
