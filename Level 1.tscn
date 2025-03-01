@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://uw0g7bgu1dmq"]
+
+[ext_resource type="PackedScene" uid="uid://bdevao5iaygkt" path="res://rectPlatorm.tscn" id="1_xtwo5"]
+
+[node name="Map 1" type="Node2D"]
+
+[node name="rect platorm" parent="." instance=ExtResource("1_xtwo5")]
+position = Vector2(425, 449)
+scale = Vector2(3.35846, 0.587453)

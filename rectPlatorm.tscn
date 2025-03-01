@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdevao5iaygkt"]
+
+[ext_resource type="Texture2D" uid="uid://bb11lpyhef6h8" path="res://Solid_white.svg" id="1_2krjc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iin0b"]
+size = Vector2(129, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c4no"]
+size = Vector2(132.985, 165)
+
+[node name="rect platorm" type="StaticBody2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(0.499995, -1)
+scale = Vector2(129, 128)
+texture = ExtResource("1_2krjc")
+
+[node name="platformCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_iin0b")
+
+[node name="oneWayFilter" type="Area2D" parent="."]
+scale = Vector2(0.970034, 1)
+
+[node name="oneWayFilterShape" type="CollisionShape2D" parent="oneWayFilter"]
+position = Vector2(0.515446, -19.5)
+shape = SubResource("RectangleShape2D_6c4no")
