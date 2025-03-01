@@ -8,7 +8,7 @@
 
 [node name="rect platorm" parent="." instance=ExtResource("1_xtwo5")]
 position = Vector2(374, 489)
-scale = Vector2(3.35846, 0.187454)
+scale = Vector2(3.28418, 0.173634)
 
 [node name="rectBarrier" parent="." instance=ExtResource("2_1afy7")]
 position = Vector2(589, 618)
